@@ -1,0 +1,47 @@
+.handler{
+    display: inline-block;
+    position: absolute;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    overflow: hidden;
+    transition: all .2s ease-in .1s;
+    cursor: pointer;
+    &.vertical{
+        width: 20px;   
+        height: 20px;
+        top: 50%;
+        margin-top: -10px;
+    }
+    &.horizontal {
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      left: 50%;
+      margin-left: -10px;
+    }
+    &.right {
+        right: -11px;
+        border-left: none;
+        border-radius: 0 20px 20px 0;
+        box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.1);
+    }
+    &.left {
+      left: -11px;
+      border-right: none;
+      border-radius: 20px 0 0 20px;
+      box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.1);
+    }
+    &.top {
+      top: -11px;
+      border-bottom: none;
+      border-radius: 20px 20px 0 0;
+      box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.1);
+    }
+    &.bottom {
+      bottom: -11px;
+      border-top: none;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    }
+    
+}

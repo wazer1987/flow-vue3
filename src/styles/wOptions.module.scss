@@ -1,0 +1,65 @@
+.options {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+
+  .form-item-block {
+    padding: 10px 20px;
+
+    .row {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+      &.row-start {
+        justify-content: flex-start;
+      }
+      .col {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: auto;
+        line-height: 1;
+
+        &.col-large {
+          width: 100%;
+          .ivu-form-item-content {
+            flex: 1 1 auto;
+          }
+        }
+        &.col-start {
+          justify-content: flex-start;
+        }
+
+        +.col {
+          margin-left: 10px;
+        }
+        .ivu-form-item-label {
+          min-width: 50px;
+          text-align: right;
+          // padding: 0 10px 0 0 !important;
+        }
+        .ivu-form-item-content {
+          display: inline-block;
+          min-width: 80px;
+        }
+      }
+    }
+
+    .input-number {
+      /*width: 60px;*/
+    }
+
+    .color-picker-box {
+      .color-preview {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+      }
+      .color-picker {
+
+      }
+    }
+  }
+}
